@@ -10,6 +10,12 @@
     </head>
     <body>
     </body>
+    @include('static_pages._header')
         <h1>Contacts</h1>
+        <div class="container">
+            <div class="offeset-md-1 col-md-10">
+                @yield('content')
+            </div>
+        </div>
     </body>
 </html>

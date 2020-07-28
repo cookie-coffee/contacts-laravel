@@ -10,4 +10,14 @@ class StaticPagesController extends Controller
     {
         return view('static_pages/home');
     }
+
+    public function create ()
+    {
+        return view('static_pages/create');
+    }
+
+    public function search ()
+    {
+        return view('static_pages/search');
+    }
 }

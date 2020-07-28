@@ -15,3 +15,5 @@
 //     return view('welcome');
 // });
 Route::get('/', 'StaticPagesController@home');
+Route::get('/create', 'StaticPagesController@create');
+Route::get('/search', 'StaticPagesController@search');
