@@ -14,6 +14,9 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'StaticPagesController@home');
-Route::get('/create', 'StaticPagesController@create');
-Route::get('/search', 'StaticPagesController@search');
+Route::get('/', 'StaticPagesController@home')->name('home');
+
+
+Route::get('create', 'ContactController@create')->name('create');
+Route::get('contacts/fetch_data', 'ContactController@fetch_data');
+Route::resource('contacts', 'ContactController');
